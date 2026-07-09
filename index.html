@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teklu Mezgebo | Resume</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="sheet">
+
+  <div class="prompt-line"><span class="prompt-user">guest@resume</span>:~$ cat profile.txt</div>
+
+  <header>
+    <div class="header-flex">
+      <div class="header-text">
+        <h1>Teklu Mezgebo</h1>
+        <p class="role">New Grad Software Engineer</p>
+        <ul class="contact-list">
+          <li>Minneapolis, MN</li>
+          <li><a href="mailto:teklumezgebo@gmail.com">teklumezgebo@gmail.com</a></li>
+          <li><a href="https://linkedin.com/in/teklumezgebo" target="_blank" rel="noopener">linkedin.com/in/teklumezgebo</a></li>
+        </ul>
+      </div>
+      <img src="profile.jpg" alt="Teklu Mezgebo" class="profile-photo">
+    </div>
+  </header>
+
+  <section>
+    <h2>summary</h2>
+    <div class="entry">
+      <p style="margin: 0; font-size: 14px; color: var(--text);">
+        Hello! I'm Teklu, a recent graduate from the University of Minnesota Twin Cities. I am at the beginning of my career as a software engineer, and I am actively looking for my first role.
+        Generally speaking I've enjoyed building all the different types of applications throughout my academic and personal projects, but more specifically I am interested in full-stack development and systems programming.
+        I have a deep interest in cloud computing and distributed systems, and I am excited to learn more about these areas as I continue to grow into my career. I am also a certified Emergency Medical Technician, and I have experience working in clinical settings, which has given me a unique perspective on the intersection of technology and healthcare.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>credentials</h2>
+    <div class="entry">
+      <div class="entry-top">
+        <span class="entry-title">University of Minnesota Twin Cities</span>
+        <span class="entry-date">May 2026</span>
+      </div>
+      <div class="entry-org">Bachelor of Arts, Computer Science</div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <span class="entry-title">National Registry of Emergency Medical Technicians</span>
+        <span class="entry-date">June 2022</span>
+      </div>
+      <div class="entry-org">Emergency Medical Technician - Basic </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>skills</h2>
+    <div class="tags">
+      <span class="tag">Python</span>
+      <span class="tag">Java</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">C++</span>
+      <span class="tag">React</span>
+      <span class="tag">Node.js</span>
+      <span class="tag">Express.js</span>
+      <span class="tag">PostgreSQL</span>
+      <span class="tag">Docker</span>
+      <span class="tag">Git</span>
+      <span class="tag">GitHub</span>
+      <!-- add more tags as needed -->
+    </div>
+  </section>
+
+  <section>
+    <h2>projects</h2>
+    <div class="entry">
+      <div class="entry-top">
+        <span class="entry-title">Electronic Health Record (Epic Systems Clone)</span>
+      </div>
+      <div class="entry-org">React, PostgreSQL, Claude API, Express.js, Prisma, TailwindCSS</div>
+      <ul>
+        <li>Developed nested RESTful API routes for 5 clinical resources with ownership-based access control preventing
+providers from modifying records created by other users</li>
+        <li>Implemented JWT-based stateless authentication with bcrypt password hashing and role-based access control
+middleware enforcing differentiated permissions across 3 clinical roles</li>
+        <li>Modeled clinical data following real world EHR conventions including ICD-10-CM diagnosis codes, pharmaceutical
+frequency enums, and note signing workflows</li>
+        <li>Built an append only audit logging system capturing user ID, action type, resource type, and timestamp on every PHI
+access event across all protected routes, reflecting HIPAA compliance requirements</li>
+        <li>Integrated the Claude API to generate structured AI-powered chart summaries aggregating diagnoses, medications,
+allergies, and clinical notes into a JSON response rendered in a provider sidebar panel</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <span class="entry-title">3D Terrain-Inspired Robotics Simulation</span>
+      </div>
+      <div class="entry-org">C++, ArcGIS, OpenStreetMap, Doxygen, Docker</div>
+      <ul>
+        <li>Coordinated sprint planning and twice-weekly standup's to align team deliverables across 3 release iterations</li>
+        <li>Designed a composite motion system enabling arbitrary nesting of behaviors so any entity could adopt complex
+multi-condition movement without modifying existing classes</li>
+        <li>Authored a unit test suite across a team codebase, achieving 90%+ fault detection across entity, motion, and physics
+subsystems</li>
+        <li>BContainerized the full simulation with Docker, packaging only compiled binaries and runtime dependencies to produce
+a portable image</li>
+        <li>Produced user and developer documentation, including JSON scene format reference, entity and motion type guides,
+and UML diagrams for potential new contributors</li>
+      </ul>
+    </div>
+    <!-- duplicate .entry block for each project -->
+  </section>
+
+  <section>
+    <h2>experience</h2>
+    <div class="entry">
+      <div class="entry-top">
+        <span class="entry-title">Researcher, Satero Labs</span>
+        <span class="entry-date">June 2024 – Oct 2024</span>
+      </div>
+      <div class="entry-org">Remote</div>
+      <ul>
+        <li>Prototyped 2 applications independently and collaboratively under mentorship, gaining experience in web scraping,
+API integration, and LLM tooling</li>
+        <li>Developed a proof of concept telephony AI app integrating ChatGPT and Twilio for automated outbound calls to
+retrieve restaurant specials via conversational AI</li>
+        <li>Built a Python web scraper to aggregate recently funded AI startups from multiple sources into a centralized dataset,
+consolidating market information into a single reference point</li>
+        <li>Produced regular video progress updates, communicating project status and technical decisions throughout the
+development process</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <span class="entry-title">Clinical Support Staff, University of Minnesota Physicians</span>
+        <span class="entry-date">May 2024 – Sept 2024</span>
+      </div>
+      <div class="entry-org">Minneapolis, MN</div>
+      <ul>
+        <li>Conducted independent continuation of care visits under physician supervision, performing a range of routine clinical
+procedures for outpatients</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <span class="entry-title">Clinical Support Staff, Park Nicollet</span>
+        <span class="entry-date">Aug 2022 – Aug 2023</span>
+      </div>
+      <div class="entry-org">St. Louis Park, MN</div>
+      <ul>
+        <li>Managed patient intake, vitals, and documentation in a high volume family medicine clinic, prioritizing competing
+responsibilities from multiple providers and patients</li>
+      </ul>
+    </div>
+    <!-- duplicate .entry block for each role -->
+  </section>
+
+  
+
+  <footer id="visitor-footer">
+    visits: <span id="visitor-count">…</span>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
