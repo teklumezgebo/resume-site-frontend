@@ -1,5 +1,4 @@
-// Swap in your real API Gateway URL once it's deployed
-const VISITOR_API_URL = 'https://YOUR-API-ID.execute-api.YOUR-REGION.amazonaws.com/visitors';
+const VISITOR_API_URL = 'https://${{ secrets.AWS_API_ID }}.execute-api.us-east-1.amazonaws.com/visitors';
 
 fetch(VISITOR_API_URL)
   .then(res => res.json())
