@@ -1,4 +1,4 @@
-const VISITOR_API_URL = 'https://${{ secrets.AWS_API_ID }}.execute-api.us-east-1.amazonaws.com/visitors';
+const VISITOR_API_URL = 'https://${{ secrets.AWS_API_ID }}.execute-api.us-east-1.amazonaws.com/resume/visitors';
 
 fetch(VISITOR_API_URL)
   .then(res => res.json())
