@@ -1,7 +1,6 @@
 # Resume Site — Frontend
 
-Personal resume site for [teklu.me](https://teklu.me), built as part of the
-[Cloud Resume Challenge](https://cloudresumechallenge.dev/docs/the-challenge/aws/).
+Personal resume site for [teklu.me](https://teklu.me)
 
 ## Architecture
 
