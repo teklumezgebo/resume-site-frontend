@@ -63,4 +63,4 @@ Pushes to `main` trigger a GitHub Actions workflow that:
 
 ## Related
 
--  [([Backend Repo](https://github.com/teklumezgebo/resume-site-backend))]
+-  [Backend Repo](https://github.com/teklumezgebo/resume-site-backend)
