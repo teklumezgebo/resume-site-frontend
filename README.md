@@ -19,7 +19,7 @@ S3 (private bucket, static site files)
 ```
 
 The site is a static HTML/CSS/JS page served through CloudFront, with the origin
-S3 bucket locked down so it's only reachable through CloudFront — not directly
+S3 bucket privatized so it's only reachable through CloudFront, not directly
 from the internet. A small JavaScript snippet calls a separate backend API to
 display a live visitor count.
 
@@ -59,11 +59,8 @@ Pushes to `main` trigger a GitHub Actions workflow that:
 
 - Secure static site hosting (private S3 origin, CloudFront-only access via OAC)
 - HTTPS with a custom domain via ACM and Route 53
-- Infrastructure as code with Terraform, including importing manually-provisioned
-  resources into Terraform state
 - CI/CD via GitHub Actions
 
 ## Related
 
-- Backend repo: [link to your backend repo]
-- Live site: [teklu.me](https://teklu.me)
+-  [([Backend Repo](https://github.com/teklumezgebo/resume-site-backend))]
