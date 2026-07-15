@@ -16,7 +16,7 @@
     <div class="header-flex">
       <div class="header-text">
         <h1>Teklu Mezgebo</h1>
-        <p class="role">New Grad Software Engineer</p>
+        <p class="role">New Grad Developer</p>
         <ul class="contact-list">
           <li>Minneapolis, MN</li>
           <li><a href="mailto:teklumezgebo@gmail.com">teklumezgebo@gmail.com</a></li>
@@ -50,14 +50,6 @@
 
     <div class="entry">
       <div class="entry-top">
-        <span class="entry-title">University of Minnesota Twin Cities</span>
-        <span class="entry-date">May 2018</span>
-      </div>
-      <div class="entry-org">Bachelor of Arts, Human Physiology</div>
-    </div>
-
-    <div class="entry">
-      <div class="entry-top">
         <span class="entry-title">National Registry of Emergency Medical Technicians</span>
         <span class="entry-date">June 2022</span>
       </div>
@@ -80,12 +72,40 @@
       <span class="tag">Git</span>
       <span class="tag">GitHub</span>
       <span class="tag">Postman</span>
+      <span class="tag">AWS Lambda</span>
+      <span class="tag">AWS S3</span>
+      <span class="tag">AWS API Gateway</span>
+      <span class="tag">AWS Cloudfront</span>
+      <span class="tag">AWS DynamoDB</span>
+      <span class="tag">AWS Route 53</span>
+      <span class="tag">Terraform</span>
       <!-- add more tags as needed -->
     </div>
   </section>
 
   <section>
     <h2>projects</h2>
+    <div class="entry">
+      <div class="entry-top">
+        <span class="entry-title">teklu.me</span>
+      </div>
+      <div class="entry-org">AWS, Terraform, HTML/CSS/JavaScript, Python</div>
+      <ul>
+        <li>Deployed a personal resume site to AWS using S3 for storage and CloudFront for global content delivery, securing the
+origin with Origin Access Control so the bucket is not publicly accessible</li>
+        <li>Configured HTTPS via an ACM certificate and connected a custom domain through Route 53, routing all traffic through
+CloudFront</li>
+        <li>Built a serverless visitor counter using API Gateway, Lambda (Python/boto3), and DynamoDB, with least-privilege IAM
+policies scoped to specific table actions</li>
+        <li>Migrated existing manually-provisioned infrastructure into Terraform, writing and reconciling resource definitions
+against live AWS state to bring S3, IAM, DynamoDB, and Lambda under version-controlled infrastructure as code</li>
+        <li>Automated deployment with GitHub Actions, syncing frontend changes to S3 and invalidating the CloudFront cache
+on every push</li>
+        <li>Wrote unit tests for Lambda logic using pytest and moto to mock AWS services, validating counter increment behavior
+without invoking live resources</li>
+      </ul>
+    </div>
+
     <div class="entry">
       <div class="entry-top">
         <span class="entry-title">Electronic Health Record (Epic Systems Clone)</span>
